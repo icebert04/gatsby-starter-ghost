@@ -131,6 +131,7 @@ video {
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
+    transition: 0.5s ease;
 }
 body {
     line-height: 1;
@@ -317,7 +318,7 @@ body {
     font-style: normal;
     letter-spacing: 0;
     text-rendering: optimizeLegibility;
-    background: ;
+    background: #fff;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
