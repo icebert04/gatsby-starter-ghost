@@ -47,8 +47,8 @@ const ArticleMetaGhost = ({ data, settings, canonical }) => {
             logo: {
                 "@type": `ImageObject`,
                 url: publisherLogo,
-                width: 60,
-                height: 60,
+                width: 80,
+                height: 80,
             },
         },
         description: ghostPost.meta_description || ghostPost.excerpt,
