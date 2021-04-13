@@ -33,7 +33,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
 
             <div className="viewport">
-
+                    
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
                     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
@@ -48,6 +48,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
+                            <script>
                                          <figure class="kg-card kg-code-card">
 
                                          {{#if isSecondary}}
@@ -72,6 +73,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                         </ul>
                                     {{/if}}
                                   </figure>
+                                </script>
+
                                    </div>
                             </div>
                             { isHome ?
