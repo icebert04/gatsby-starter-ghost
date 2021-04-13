@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import default from 'default.hbs'
+
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 
@@ -47,30 +49,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                 <figure class="kg-card kg-code-card">
-
-                                         {{#if isSecondary}}
-                                        <ul class="nav">
-                                            {{#foreach navigation}}
-                                                <li class="nav-{{slug}}">
-                                                    <a href="{{url}}" class="social-link">
-                                                        <svg width="16" height="16" role="img" aria-label="{{slug}} icon">
-                                                            <use xlink:href="#{{slug}}"></use>
-                                                        </svg>
-                                                    </a>
-                                                </li>
-                                            {{/foreach}}
-                                        </ul>
-                                    {{else}}
-                                        <ul class="nav">
-                                            {{#foreach navigation}}
-                                                <li class="{{link_class for=(url) class=(concat "nav-" slug)}}">
-                                                    <a href="{{url absolute="true"}}">{{label}}</a>
-                                                </li>
-                                            {{/foreach}}
-                                        </ul>
-                                    {{/if}}
-                                  </figure>
+                                
                                    </div>
                             </div>
                             { isHome ?
