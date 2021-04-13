@@ -48,6 +48,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
+                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer">
+                                      <img className="site-nav-icon" src="/images/icons/twitter.png" alt="Twitter" /></a>}
+                                    { site.twitter && <a href="https://www.linkedin.com/in/francis-isberto/" className="site-nav-item" target="_blank" rel="noopener noreferrer">
+                                      <img className="site-nav-icon" src="/images/icons/linkedin.png" alt="Linkedin" /></a>}
                                    </div>
                             </div>
                             { isHome ?
