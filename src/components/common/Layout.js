@@ -4,7 +4,8 @@ import { Helmet } from 'react-helmet'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import default from 'default.hbs'
+import Default from '/default.hbs'
+import Navigation from '/navigation.hbs
 
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
@@ -49,7 +50,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                
+                                    <Navigation>
                                    </div>
                             </div>
                             { isHome ?
