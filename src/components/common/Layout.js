@@ -47,10 +47,31 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                    { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
-                                    { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
-                                    <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
-                                </div>
+                                 <figure class="kg-card kg-code-card">
+
+                                         {{#if isSecondary}}
+                                        <ul class="nav">
+                                            {{#foreach navigation}}
+                                                <li class="nav-{{slug}}">
+                                                    <a href="{{url}}" class="social-link">
+                                                        <svg width="16" height="16" role="img" aria-label="{{slug}} icon">
+                                                            <use xlink:href="#{{slug}}"></use>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            {{/foreach}}
+                                        </ul>
+                                    {{else}}
+                                        <ul class="nav">
+                                            {{#foreach navigation}}
+                                                <li class="{{link_class for=(url) class=(concat "nav-" slug)}}">
+                                                    <a href="{{url absolute="true"}}">{{label}}</a>
+                                                </li>
+                                            {{/foreach}}
+                                        </ul>
+                                    {{/if}}
+                                  </figure>
+                                   </div>
                             </div>
                             { isHome ?
                                 <div className="site-banner">
