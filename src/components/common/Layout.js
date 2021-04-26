@@ -54,7 +54,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                       <img className="site-nav-icon" src="/images/icons/linkedin.png" alt="Linkedin" /></a>}
                                    </div>
                             </div>
-
+                             { isHome ?
+                                <div className="site-banner">
+                                    <h1 className="site-banner-title">{site.title}</h1>
+                                    <p className="site-banner-desc">{site.description}</p>
+                                </div> :
+                                null}
                             <nav className="site-nav">
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
