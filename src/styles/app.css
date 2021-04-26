@@ -665,10 +665,14 @@ h6 {
 .site-head {
     padding-top: 20px;
     padding-bottom: 20px;
-    color: #000;
-    background: var(--color-base);
+    color: #fff;
+    background: #f5f5f5;
     background-position: center;
     background-size: cover;
+}
+
+.site-banner h1, p, a{
+	border: solid 2px #000;	
 }
 
 .site-nav-item {
