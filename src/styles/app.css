@@ -671,9 +671,6 @@ h6 {
     background-size: cover;
 }
 
-.site-banner h1, p, a{
-	border: solid 2px #000;	
-}
 
 .site-nav-item {
     display: inline-block;
