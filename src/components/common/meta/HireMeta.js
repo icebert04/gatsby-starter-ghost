@@ -2,7 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import PropTypes from 'prop-types'
 import _ from 'lodash'
-import { StaticQuery, graphql } from 'gatsby'
 
 import ImageMeta from './ImageMeta'
 import config from '../../../utils/siteConfig'
@@ -29,10 +28,10 @@ export default HireMeta () {
             </Helmet>
             <ImageMeta image={shareImage} />
             
+                <section>
             <div>
               <h1>I AM FRANCIS ISBERTO</h1>
-              <p>
-                  Hey there, I'm <b>Francis!</b>
+              <p>Hey there, I'm <b>Francis!</b>
                   I'm a <b>Web Developer, Digital Content Creator,</b> and a <b>Serial Entrepreneur.</b>
 
                   The bulk of my time goes to helping Startup companies.
@@ -44,6 +43,7 @@ export default HireMeta () {
               </p>
               <h4><b>My Email: </b></h4>
              </div>
+                 </section>
         </>
     )
 }
