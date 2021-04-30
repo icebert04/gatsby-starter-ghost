@@ -158,14 +158,6 @@ module.exports = {
                             }
                         }
                     }
-                 allGhostHire {
-                        edges {
-                            node {
-                                id
-                                slug
-                            }
-                        }
-                    }
                 }`,
                 mapping: {
                     allGhostPost: {
@@ -176,9 +168,6 @@ module.exports = {
                     },
                     allGhostAuthor: {
                         sitemap: `authors`,
-                    },
-                    allGhostHire: {
-                        sitemap: `hire`,
                     },
                     allGhostPage: {
                         sitemap: `pages`,
