@@ -57,6 +57,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const authors = result.data.allGhostAuthor.edges
     const pages = result.data.allGhostPage.edges
     const posts = result.data.allGhostPost.edges
+  
 
     // Load templates
     const indexTemplate = path.resolve(`./src/templates/index.js`)
@@ -64,6 +65,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const authorTemplate = path.resolve(`./src/templates/author.js`)
     const pageTemplate = path.resolve(`./src/templates/page.js`)
     const postTemplate = path.resolve(`./src/templates/post.js`)
+    const hireTemplate = path.resolve(`./src/templates/Hire.js`)
 
     // Create tag pages
     tags.forEach(({ node }) => {
