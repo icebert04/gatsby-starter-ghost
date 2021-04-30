@@ -122,8 +122,8 @@ exports.createPages = async ({ graphql, actions }) => {
     })
        
      // Create Hire
-        hire( {
-            const url = `/${node.slug}`
+        hire.forEach(({ node }) => {
+            const url = `/${node.slug}/`
 
         })
     
