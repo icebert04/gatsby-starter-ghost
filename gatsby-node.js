@@ -126,6 +126,9 @@ exports.createPages = async ({ graphql, actions }) => {
             
             const url = `/${node.slug}/`
             component: hireTemplate,
+                context: {
+                slug: node.slug
+            },
         })
     
     // Create pages
