@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://tarsier63.herokuapp.com",
-    "contentApiKey": "e83a819f63f80c0202a1c52284"
+    "apiUrl": "https://madapaca.herokuapp.com",
+    "contentApiKey": "1a64c2eebd2ba2880b3e987942"
   },
   "production": {
-    "apiUrl": "https://tarsier63.herokuapp.com",
-    "contentApiKey": "e83a819f63f80c0202a1c52284"
+    "apiUrl": "https://madapaca.herokuapp.com",
+    "contentApiKey": "1a64c2eebd2ba2880b3e987942"
   }
 }
